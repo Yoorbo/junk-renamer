@@ -1,7 +1,10 @@
 import os
 import random
 files = os.listdir()
+
+# Put a path to a file with possible names here
 words = open("C:\everyenglishword.txt").read().splitlines()
+
 filenamearray = []
 filename = " "
 for x in files:
