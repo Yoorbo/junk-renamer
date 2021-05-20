@@ -11,17 +11,21 @@ for x in files:
     possiblename = random.choice(words)
     name = x.lower()
     try:
-        no720p = name.replace("-720p", "")
+            no720p = name.replace("-720p", "")
     except:
-        no720p = name.replace("720p", "")
+            no720p = name.replace("720p", "")
     try:
-        no1080p = no720p.replace("-1080p", "")
+            no480p = no720p.replace("-480p", "")
     except:
-        no1080p = no720p.replace("1080p", "")
+            no480p = no720p.replace("480p", "")
     try:
-        nov1x = no1080p.replace("-v1x", "")
+            no1080p = no480p.replace("-1080p", "")
     except:
-        nov1x = no1080p.replace("v1x", "")
+            no1080p = no480p.replace("1080p", "")
+    try:
+            nov1x = no1080p.replace("-v1x", "")
+    except:
+            nov1x = no1080p.replace("v1x", "")
     noHyphens = nov1x.replace("-", " ")
     noUnderscores = noHyphens.replace("_", " ")
     noBracket1 = noUnderscores.replace(")", "")
